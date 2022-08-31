@@ -25,6 +25,8 @@ class LandingController extends Controller
     }
     public function test()
     {
-        // return $stock_datas;
+        ob_start();
+        require(public_path("webgis/") . "index.php");
+        return ob_get_clean();
     }
 }
