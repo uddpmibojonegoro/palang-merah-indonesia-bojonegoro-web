@@ -54,7 +54,8 @@
                             href="#">Unit Donor Darah</a>
                     </li>
                     <li class="mr-3">
-                        <a class="inline-block py-2 px-4 text-black no-underline" href="/">Bank Data
+                        <a class="inline-block py-2 px-4 text-black no-underline"
+                            href="https://gis.pmibojonegoro.com/">Bank Data
                             Darah</a>
                     </li>
                 </ul>
