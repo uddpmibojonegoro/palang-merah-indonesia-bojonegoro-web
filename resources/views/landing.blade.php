@@ -116,10 +116,10 @@
     <section class="bg-white border-b py-8">
         <div class="container max-w-5xl mx-auto m-8">
             <div class="pb-2">
-                <h4 class="w-full my-2 text-4xl font-bold leading-tight text-center text-gray-800 b-1">
-                    Informasi Stok Darah UDD PMI Bojonegoro
-                </h4>
                 <h4 class="w-full my-2 text-2xl font-bold leading-tight text-center text-gray-800 b-1">
+                    Informasi stok darah siap pakai UDD PMI Bojonegoro
+                </h4>
+                <h4 class="w-full my-2 text-xl font-bold leading-tight text-center text-gray-800 b-1">
                     Update {{ str_replace('"', '', $stocks->datetime) }}
                 </h4>
             </div>
