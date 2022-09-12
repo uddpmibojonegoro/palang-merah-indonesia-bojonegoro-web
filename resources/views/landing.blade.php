@@ -124,7 +124,7 @@
                 Update {{ str_replace('"', '', $stocks->datetime) }}
             </h4>
         </div>
-        <div class="flex overflow-scroll justify-items-stretch md:justify-center">
+        <div class="flex justify-items-stretch md:justify-center">
             <div class="basis-1/8 flex-shrink-0">
                 <div class="mx-8 sm:mx-1 px-4 sm:px-4 py-4">
                     <div class="inline-block shadow rounded-lg overflow-hidden">
@@ -274,7 +274,7 @@
             </h4>
         </div>
         @if (count((array) $schedules) > 0)
-            <div class="flex justify-items-stretch md:justify-center overflow-scroll">
+            <div class="flex justify-items-stretch md:justify-center">
                 <div class="basis-1/8 flex-none rounded-lg">
                     <div class="mx-8 sm:mx-4 px-4 sm:px-2 py-4 overflow-x-auto">
                         <div class="inline-block min-w-full shadow rounded-lg overflow-hidden">
