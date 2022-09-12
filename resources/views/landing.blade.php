@@ -31,7 +31,8 @@
             <div class="pl-4 flex items-center">
                 <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
                     href="#">
-                    <img class="object-contain h-24 w-96" src={{ asset('assets/image/pmibjn.png') }} alt="">
+                    <img class="object-contain md:object-scale-dow h-24 w-96" src={{ asset('assets/image/pmibjn.png') }}
+                        alt="">
                 </a>
             </div>
             <div class="block lg:hidden pr-4">
@@ -73,7 +74,7 @@
         <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
             <!--Left Col-->
             <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-                <p class="uppercase tracking-loose w-full">PMI Kabupaten Bojonegoro</p>
+                <p class="mt-5 uppercase tracking-loose w-full">PMI Kabupaten Bojonegoro</p>
                 <h1 class="my-4 text-5xl font-bold leading-tight">
                     Mari Bersinergi dalam Kemanusiaan
                 </h1>
@@ -117,163 +118,158 @@
     <section class="bg-white border-b py-8">
         <div class="pb-2">
             <h4 class="w-full my-2 text-4xl font-bold leading-tight text-center text-gray-800 b-1">
-                Informasi stok darah siap pakai UDD PMI Bojonegoro
+                Informasi stok darah siap pakai
+            </h4>
+            <h4 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800 b-1">
+                UDD PMI Bojonegoro
             </h4>
             <h4 class="w-full my-2 text-xl font-bold leading-tight text-center text-gray-800 b-1">
                 Update {{ str_replace('"', '', $stocks->datetime) }}
             </h4>
         </div>
-        <div class="mx-8 sm:mx-72 px-4 sm:px-8 py-4 overflow-x-auto">
-            <div class="inline-block min-w-full shadow rounded-lg overflow-hidden">
-                <table class="min-w-full leading-normal">
-                    <thead class="bg-red-600 divide-y">
-                        <tr>
-                            <th rowspan="2" class="px-6 py-2 text-lg text-white border-solid border-1 border-white">
-                                Komponen
-                            </th>
-                            <th colspan="4" class="px-6 py-2 text-lg text-white border-solid border-1 border-white">
-                                Golongan
-                            </th>
-                            <th rowspan="2" class="px-6 py-2 text-lg text-white border-solid border-1 border-white">
-                                Total
-                            </th>
-                        </tr>
-                        <tr>
-                            <th class="px-6 py-2 text-lg text-white border-solid border-1 border-white">
-                                A
-                            </th>
-                            <th class="px-6 py-2 text-lg text-white border-solid border-1 border-white">
-                                B
-                            </th>
-                            <th class="px-6 py-2 text-lg text-white border-solid border-1 border-white">
-                                O
-                            </th>
-                            <th class="px-6 py-2 text-lg text-white border-solid border-1 border-white">
-                                AB
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody class="bg-white divide-double divide-y divide-gray-300">
-                        <tr class="whitespace-nowrap bg-white">
-                            <td class="px-6 py-4 bg-white  text-gray-500">
-                                WB (Whole Blood)
-                            </td>
-                            <td class="px-6 py-4 text-gray-500 text-center">
-                                {{ $stocks->wb_a }}
-                            </td>
-                            <td class="px-6 py-4 text-gray-500 text-center">
-                                {{ $stocks->wb_b }}
-                            </td>
-                            <td class="px-6 py-4  text-gray-500 text-center">
-                                {{ $stocks->wb_o }}
-                            </td>
-                            <td class="px-6 py-4 text-gray-500 text-center">
-                                {{ $stocks->wb_ab }}
-                            </td>
-                            <td class="px-6 py-4 text-gray-500 text-center">
-                                {{ $stocks->wb_jum }}
-                            </td>
-                        </tr>
-                        <tr class="whitespace-nowrap bg-white">
-                            <td class="px-6 py-4  text-gray-500">
-                                PRC (Packed Red Cell)
-                            </td>
-                            <td class="px-6 py-4 text-gray-500 text-center">
-                                {{ $stocks->prc_a }}
-                            </td>
-                            <td class="px-6 py-4 text-gray-500 text-center">
-                                {{ $stocks->prc_b }}
-                            </td>
-                            <td class="px-6 py-4  text-gray-500 text-center">
-                                {{ $stocks->prc_o }}
-                            </td>
-                            <td class="px-6 py-4 text-gray-500 text-center">
-                                {{ $stocks->prc_ab }}
-                            </td>
-                            <td class="px-6 py-4 text-gray-500 text-center">
-                                {{ $stocks->prc_jum }}
-                            </td>
-                        </tr>
-                        <tr class="whitespace-nowrap bg-white">
-                            <td class="px-6 py-4  text-gray-500">
-                                TC (Trombocyte)
-                            </td>
-                            <td class="px-6 py-4 text-gray-500 text-center">
-                                {{ $stocks->tc_a }}
-                            </td>
-                            <td class="px-6 py-4 text-gray-500 text-center">
-                                {{ $stocks->tc_b }}
-                            </td>
-                            <td class="px-6 py-4  text-gray-500 text-center">
-                                {{ $stocks->tc_o }}
-                            </td>
-                            <td class="px-6 py-4 text-gray-500 text-center">
-                                {{ $stocks->tc_ab }}
-                            </td>
-                            <td class="px-6 py-4 text-gray-500 text-center">
-                                {{ $stocks->tc_jum }}
-                            </td>
-                        </tr>
-                        <tr class="whitespace-nowrap bg-white">
-                            <td class="px-6 py-4  text-gray-500">
-                                FFP (Fresh Frozen Plasma)
-                            </td>
-                            <td class="px-6 py-4 text-gray-500 text-center">
-                                {{ $stocks->ffp_a }}
-                            </td>
-                            <td class="px-6 py-4 text-gray-500 text-center">
-                                {{ $stocks->ffp_b }}
-                            </td>
-                            <td class="px-6 py-4  text-gray-500 text-center">
-                                {{ $stocks->ffp_o }}
-                            </td>
-                            <td class="px-6 py-4 text-gray-500 text-center">
-                                {{ $stocks->ffp_ab }}
-                            </td>
-                            <td class="px-6 py-4 text-gray-500 text-center">
-                                {{ $stocks->ffp_jum }}
-                            </td>
-                        </tr>
-                        <tr class="whitespace-nowrap bg-white">
-                            <td class="px-6 py-4  text-gray-500">
-                                Total
-                            </td>
-                            <td class="px-6 py-4 text-gray-500 text-center">
-                                {{ $stocks->tot_a }}
-                            </td>
-                            <td class="px-6 py-4 text-gray-500 text-center">
-                                {{ $stocks->tot_b }}
-                            </td>
-                            <td class="px-6 py-4  text-gray-500 text-center">
-                                {{ $stocks->tot_o }}
-                            </td>
-                            <td class="px-6 py-4 text-gray-500 text-center">
-                                {{ $stocks->tot_ab }}
-                            </td>
-                            <td class="px-6 py-4 text-gray-500 text-center">
-                                {{ $stocks->tot_jum }}
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+        <div class="flex justify-center overflow-scroll">
+            <div class="basis-1/8 flex-none rounded-lg">
+                <div class="mx-8 sm:mx-1 px-4 sm:px-1 py-4 overflow-x-auto ">
+                    <div class="inline-block min-w-full shadow rounded-lg overflow-hidden">
+                        <table class="min-w-full leading-normal ">
+                            <thead class="bg-red-600 divide-y">
+                                <tr>
+                                    <th rowspan="2"
+                                        class="px-6 py-2 text-lg text-white border-solid border-1 border-white">
+                                        Komponen
+                                    </th>
+                                    <th colspan="4"
+                                        class="px-6 py-2 text-lg text-white border-solid border-1 border-white">
+                                        Golongan
+                                    </th>
+                                    <th rowspan="2"
+                                        class="px-6 py-2 text-lg text-white border-solid border-1 border-white">
+                                        Total
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="px-6 py-2 text-lg text-white border-solid border-1 border-white">
+                                        A
+                                    </th>
+                                    <th class="px-6 py-2 text-lg text-white border-solid border-1 border-white">
+                                        B
+                                    </th>
+                                    <th class="px-6 py-2 text-lg text-white border-solid border-1 border-white">
+                                        O
+                                    </th>
+                                    <th class="px-6 py-2 text-lg text-white border-solid border-1 border-white">
+                                        AB
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white divide-double divide-y divide-gray-300">
+                                <tr class="whitespace-nowrap bg-white">
+                                    <td class="px-6 py-4 bg-white  text-gray-500">
+                                        WB (Whole Blood)
+                                    </td>
+                                    <td class="px-6 py-4 text-gray-500 text-center">
+                                        {{ $stocks->wb_a }}
+                                    </td>
+                                    <td class="px-6 py-4 text-gray-500 text-center">
+                                        {{ $stocks->wb_b }}
+                                    </td>
+                                    <td class="px-6 py-4  text-gray-500 text-center">
+                                        {{ $stocks->wb_o }}
+                                    </td>
+                                    <td class="px-6 py-4 text-gray-500 text-center">
+                                        {{ $stocks->wb_ab }}
+                                    </td>
+                                    <td class="px-6 py-4 text-gray-500 text-center">
+                                        {{ $stocks->wb_jum }}
+                                    </td>
+                                </tr>
+                                <tr class="whitespace-nowrap bg-white">
+                                    <td class="px-6 py-4  text-gray-500">
+                                        PRC (Packed Red Cell)
+                                    </td>
+                                    <td class="px-6 py-4 text-gray-500 text-center">
+                                        {{ $stocks->prc_a }}
+                                    </td>
+                                    <td class="px-6 py-4 text-gray-500 text-center">
+                                        {{ $stocks->prc_b }}
+                                    </td>
+                                    <td class="px-6 py-4  text-gray-500 text-center">
+                                        {{ $stocks->prc_o }}
+                                    </td>
+                                    <td class="px-6 py-4 text-gray-500 text-center">
+                                        {{ $stocks->prc_ab }}
+                                    </td>
+                                    <td class="px-6 py-4 text-gray-500 text-center">
+                                        {{ $stocks->prc_jum }}
+                                    </td>
+                                </tr>
+                                <tr class="whitespace-nowrap bg-white">
+                                    <td class="px-6 py-4  text-gray-500">
+                                        TC (Trombocyte)
+                                    </td>
+                                    <td class="px-6 py-4 text-gray-500 text-center">
+                                        {{ $stocks->tc_a }}
+                                    </td>
+                                    <td class="px-6 py-4 text-gray-500 text-center">
+                                        {{ $stocks->tc_b }}
+                                    </td>
+                                    <td class="px-6 py-4  text-gray-500 text-center">
+                                        {{ $stocks->tc_o }}
+                                    </td>
+                                    <td class="px-6 py-4 text-gray-500 text-center">
+                                        {{ $stocks->tc_ab }}
+                                    </td>
+                                    <td class="px-6 py-4 text-gray-500 text-center">
+                                        {{ $stocks->tc_jum }}
+                                    </td>
+                                </tr>
+                                <tr class="whitespace-nowrap bg-white">
+                                    <td class="px-6 py-4  text-gray-500">
+                                        FFP (Fresh Frozen Plasma)
+                                    </td>
+                                    <td class="px-6 py-4 text-gray-500 text-center">
+                                        {{ $stocks->ffp_a }}
+                                    </td>
+                                    <td class="px-6 py-4 text-gray-500 text-center">
+                                        {{ $stocks->ffp_b }}
+                                    </td>
+                                    <td class="px-6 py-4  text-gray-500 text-center">
+                                        {{ $stocks->ffp_o }}
+                                    </td>
+                                    <td class="px-6 py-4 text-gray-500 text-center">
+                                        {{ $stocks->ffp_ab }}
+                                    </td>
+                                    <td class="px-6 py-4 text-gray-500 text-center">
+                                        {{ $stocks->ffp_jum }}
+                                    </td>
+                                </tr>
+                                <tr class="whitespace-nowrap bg-white">
+                                    <td class="px-6 py-4  text-gray-500">
+                                        Total
+                                    </td>
+                                    <td class="px-6 py-4 text-gray-500 text-center">
+                                        {{ $stocks->tot_a }}
+                                    </td>
+                                    <td class="px-6 py-4 text-gray-500 text-center">
+                                        {{ $stocks->tot_b }}
+                                    </td>
+                                    <td class="px-6 py-4  text-gray-500 text-center">
+                                        {{ $stocks->tot_o }}
+                                    </td>
+                                    <td class="px-6 py-4 text-gray-500 text-center">
+                                        {{ $stocks->tot_ab }}
+                                    </td>
+                                    <td class="px-6 py-4 text-gray-500 text-center">
+                                        {{ $stocks->tot_jum }}
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
             </div>
         </div>
-
-        {{-- <div class="container max-w-5xl mx-auto m-8">
-            <div class="pb-2">
-                <h4 class="w-full my-2 text-2xl font-bold leading-tight text-center text-gray-800 b-1">
-                    Informasi stok darah siap pakai UDD PMI Bojonegoro
-                </h4>
-                <h4 class="w-full my-2 text-xl font-bold leading-tight text-center text-gray-800 b-1">
-                    Update {{ str_replace('"', '', $stocks->datetime) }}
-                </h4>
-            </div>
-            <div class="container flex justify-center mx-auto">
-                <table class="divide-y divide-x divide-gray-300 rounded-lg min-w-full table-auto">
-                    
-                </table>
-            </div>
-        </div> --}}
 
         <div class="pb-2">
             <h4 class="w-full my-2 text-4xl font-bold leading-tight text-center text-gray-800 b-1">
@@ -281,47 +277,54 @@
             </h4>
         </div>
         @if (count((array) $schedules) > 0)
+            <div class="flex justify-center overflow-scroll">
+                <div class="basis-1/8 flex-none rounded-lg">
+                    <div class="mx-8 sm:mx-4 px-4 sm:px-2 py-4 overflow-x-auto">
+                        <div class="inline-block min-w-full shadow rounded-lg overflow-hidden">
+                            <table class="min-w-full leading-normal">
+                                <thead>
+                                    <tr>
+                                        <th
+                                            class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+                                            Nomor</th>
+                                        <th
+                                            class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+                                            Lokasi</th>
+                                        <th
+                                            class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+                                            Jadwal</th>
+                                        <th
+                                            class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+                                            Alamat</th>
 
-            <div class="mx-8 sm:mx-72 px-4 sm:px-8 py-4 overflow-x-auto">
-                <div class="inline-block min-w-full shadow rounded-lg overflow-hidden">
-                    <table class="min-w-full leading-normal">
-                        <thead>
-                            <tr>
-                                <th
-                                    class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-                                    Nomor</th>
-                                <th
-                                    class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-                                    Lokasi</th>
-                                <th
-                                    class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-                                    Jadwal</th>
-                                <th
-                                    class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-                                    Alamat</th>
+                                    </tr>
+                                </thead>
 
-                            </tr>
-                        </thead>
-
-                        <tbody class="bg-white">
-                            @foreach ($schedules as $schedule)
-                                <tr>
-                                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200 text-gray-500">
-                                        {{ $loop->index + 1 }}
-                                    </td>
-                                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200 text-gray-500">
-                                        {{ str_replace('"', '', $schedule->Lokasi) }}
-                                    </td>
-                                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200 text-gray-500">
-                                        {{ str_replace('"', '', $schedule->Jadwal) }}
-                                    </td>
-                                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200 text-gray-500">
-                                        {{ str_replace('"', '', $schedule->Alamat) }}
-                                    </td>
-                                </tr>
-                            @endforeach
-                        </tbody>
-                    </table>
+                                <tbody class="bg-white">
+                                    @foreach ($schedules as $schedule)
+                                        <tr>
+                                            <td
+                                                class="px-6 py-4 whitespace-no-wrap border-b border-gray-200 text-gray-500">
+                                                {{ $loop->index + 1 }}
+                                            </td>
+                                            <td
+                                                class="px-6 py-4 whitespace-no-wrap border-b border-gray-200 text-gray-500">
+                                                {{ str_replace('"', '', $schedule->Lokasi) }}
+                                            </td>
+                                            <td
+                                                class="px-6 py-4 whitespace-no-wrap border-b border-gray-200 text-gray-500">
+                                                {{ str_replace('"', '', $schedule->Jadwal) }}
+                                            </td>
+                                            <td
+                                                class="px-6 py-4 whitespace-no-wrap border-b border-gray-200 text-gray-500">
+                                                {{ str_replace('"', '', $schedule->Alamat) }}
+                                            </td>
+                                        </tr>
+                                    @endforeach
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
         @else
