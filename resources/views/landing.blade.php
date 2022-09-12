@@ -11,9 +11,6 @@
     <meta name="description" content="UDD PMI Bojonegoro" />
     <meta name="keywords" content="" />
     <meta name="author" content="" />
-    {{-- <script src="https://cdn.tailwindcss.com"></script> --}}
-    {{-- <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" /> --}}
-    <!--Replace with your tailwind.css once created-->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
     <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
     <style>
@@ -31,7 +28,7 @@
             <div class="pl-4 flex items-center">
                 <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
                     href="#">
-                    <img class="object-contain md:object-scale-dow h-24 w-96" src={{ asset('assets/image/pmibjn.png') }}
+                    <img class="object-contain md:object-scale-dow h-24 w-72" src={{ asset('assets/image/pmibjn.png') }}
                         alt="">
                 </a>
             </div>
@@ -127,11 +124,11 @@
                 Update {{ str_replace('"', '', $stocks->datetime) }}
             </h4>
         </div>
-        <div class="flex w-full flex-wrap justify-center overflow-scroll flex-row">
-            <div class="basis-1/8 rounded-lg">
-                <div class="mx-8 sm:mx-1 px-4 sm:px-1 py-4 overflow-x-auto ">
-                    <div class="inline-block min-w-full shadow rounded-lg overflow-hidden">
-                        <table class="table-fixed">
+        <div class="flex overflow-scroll justify-items-stretch md:justify-center">
+            <div class="basis-1/8 flex-shrink-0">
+                <div class="mx-8 sm:mx-1 px-4 sm:px-4 py-4">
+                    <div class="inline-block shadow rounded-lg overflow-hidden">
+                        <table class="table-auto">
                             <thead class="bg-red-600 divide-y">
                                 <tr>
                                     <th rowspan="2"
@@ -277,7 +274,7 @@
             </h4>
         </div>
         @if (count((array) $schedules) > 0)
-            <div class="flex justify-center overflow-scroll">
+            <div class="flex justify-items-stretch md:justify-center overflow-scroll">
                 <div class="basis-1/8 flex-none rounded-lg">
                     <div class="mx-8 sm:mx-4 px-4 sm:px-2 py-4 overflow-x-auto">
                         <div class="inline-block min-w-full shadow rounded-lg overflow-hidden">
