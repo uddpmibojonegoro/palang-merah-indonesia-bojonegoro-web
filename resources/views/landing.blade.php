@@ -24,7 +24,7 @@
 <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
     <!--Nav-->
     <nav id="header" class="fixed w-full z-30 top-0 text-white">
-        <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
+        <div class="w-full container mx-auto flex items-center justify-between mt-0 py-2">
             <div class="pl-4 flex items-center">
                 <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
                     href="#">
@@ -67,7 +67,7 @@
         <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
     </nav>
     <!--Hero-->
-    <div class="max-w-3xl mx-auto xl:max-w-none xl:ml-0">
+    <div class="mx-auto xl:max-w-none xl:ml-0 w-full">
         <div class="pt-24">
             <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
                 <!--Left Col-->
@@ -163,22 +163,22 @@
                                 </thead>
                                 <tbody class="bg-white divide-double divide-y divide-gray-300">
                                     <tr class="whitespace-nowrap bg-white">
-                                        <td class="px-4 py-4 bg-white  text-gray-500">
+                                        <td class="px-4 py-4 text-lg bg-white  text-gray-500 tracking-wide">
                                             WB (Whole Blood)
                                         </td>
-                                        <td class="px-4 py-4 text-gray-500 text-center">
+                                        <td class="px-4 py-4 text-gray-500 text-lg text-center tracking-wide">
                                             {{ $stocks->wb_a }}
                                         </td>
-                                        <td class="px-4 py-4 text-gray-500 text-center">
+                                        <td class="px-4 py-4 text-gray-500 text-lg text-center">
                                             {{ $stocks->wb_b }}
                                         </td>
-                                        <td class="px-4 py-4  text-gray-500 text-center">
+                                        <td class="px-4 py-4  text-gray-500 text-lg text-center">
                                             {{ $stocks->wb_o }}
                                         </td>
-                                        <td class="px-4 py-4 text-gray-500 text-center">
+                                        <td class="px-4 py-4 text-gray-500 text-lg text-center">
                                             {{ $stocks->wb_ab }}
                                         </td>
-                                        <td class="px-4 py-4 text-gray-500 text-center">
+                                        <td class="px-4 py-4 text-gray-500 text-lg text-center">
                                             {{ $stocks->wb_jum }}
                                         </td>
                                     </tr>
@@ -186,19 +186,19 @@
                                         <td class="px-4 py-4  text-gray-500">
                                             PRC (Packed Red Cell)
                                         </td>
-                                        <td class="px-4 py-4 text-gray-500 text-center">
+                                        <td class="px-4 py-4 text-gray-500 text-lg text-center">
                                             {{ $stocks->prc_a }}
                                         </td>
-                                        <td class="px-4 py-4 text-gray-500 text-center">
+                                        <td class="px-4 py-4 text-gray-500 text-lg text-center">
                                             {{ $stocks->prc_b }}
                                         </td>
-                                        <td class="px-4 py-4  text-gray-500 text-center">
+                                        <td class="px-4 py-4  text-gray-500 text-lg text-center">
                                             {{ $stocks->prc_o }}
                                         </td>
-                                        <td class="px-4 py-4 text-gray-500 text-center">
+                                        <td class="px-4 py-4 text-gray-500 text-lg text-center">
                                             {{ $stocks->prc_ab }}
                                         </td>
-                                        <td class="px-4 py-4 text-gray-500 text-center">
+                                        <td class="px-4 py-4 text-gray-500 text-lg text-center">
                                             {{ $stocks->prc_jum }}
                                         </td>
                                     </tr>
@@ -206,19 +206,19 @@
                                         <td class="px-4 py-4  text-gray-500">
                                             TC (Trombocyte)
                                         </td>
-                                        <td class="px-4 py-4 text-gray-500 text-center">
+                                        <td class="px-4 py-4 text-gray-500 text-lg text-center">
                                             {{ $stocks->tc_a }}
                                         </td>
-                                        <td class="px-4 py-4 text-gray-500 text-center">
+                                        <td class="px-4 py-4 text-gray-500 text-lg text-center">
                                             {{ $stocks->tc_b }}
                                         </td>
-                                        <td class="px-4 py-4  text-gray-500 text-center">
+                                        <td class="px-4 py-4  text-gray-500 text-lg text-center">
                                             {{ $stocks->tc_o }}
                                         </td>
-                                        <td class="px-4 py-4 text-gray-500 text-center">
+                                        <td class="px-4 py-4 text-gray-500 text-lg text-center">
                                             {{ $stocks->tc_ab }}
                                         </td>
-                                        <td class="px-4 py-4 text-gray-500 text-center">
+                                        <td class="px-4 py-4 text-gray-500 text-lg text-center">
                                             {{ $stocks->tc_jum }}
                                         </td>
                                     </tr>
@@ -226,19 +226,19 @@
                                         <td class="px-4 py-4  text-gray-500">
                                             FFP (Fresh Frozen Plasma)
                                         </td>
-                                        <td class="px-4 py-4 text-gray-500 text-center">
+                                        <td class="px-4 py-4 text-gray-500 text-lg text-center">
                                             {{ $stocks->ffp_a }}
                                         </td>
-                                        <td class="px-4 py-4 text-gray-500 text-center">
+                                        <td class="px-4 py-4 text-gray-500 text-lg text-center">
                                             {{ $stocks->ffp_b }}
                                         </td>
-                                        <td class="px-4 py-4  text-gray-500 text-center">
+                                        <td class="px-4 py-4  text-gray-500 text-lg text-center">
                                             {{ $stocks->ffp_o }}
                                         </td>
-                                        <td class="px-4 py-4 text-gray-500 text-center">
+                                        <td class="px-4 py-4 text-gray-500 text-lg text-center">
                                             {{ $stocks->ffp_ab }}
                                         </td>
-                                        <td class="px-4 py-4 text-gray-500 text-center">
+                                        <td class="px-4 py-4 text-gray-500 text-lg text-center">
                                             {{ $stocks->ffp_jum }}
                                         </td>
                                     </tr>
@@ -246,19 +246,19 @@
                                         <td class="px-4 py-4  text-gray-500">
                                             Total
                                         </td>
-                                        <td class="px-4 py-4 text-gray-500 text-center">
+                                        <td class="px-4 py-4 text-gray-500 text-lg text-center">
                                             {{ $stocks->tot_a }}
                                         </td>
-                                        <td class="px-4 py-4 text-gray-500 text-center">
+                                        <td class="px-4 py-4 text-gray-500 text-lg text-center">
                                             {{ $stocks->tot_b }}
                                         </td>
-                                        <td class="px-4 py-4  text-gray-500 text-center">
+                                        <td class="px-4 py-4  text-gray-500 text-lg text-center">
                                             {{ $stocks->tot_o }}
                                         </td>
-                                        <td class="px-4 py-4 text-gray-500 text-center">
+                                        <td class="px-4 py-4 text-gray-500 text-lg text-center">
                                             {{ $stocks->tot_ab }}
                                         </td>
-                                        <td class="px-4 py-4 text-gray-500 text-center">
+                                        <td class="px-4 py-4 text-gray-500 text-lg text-center">
                                             {{ $stocks->tot_jum }}
                                         </td>
                                     </tr>
@@ -374,7 +374,7 @@
                 <div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
             </div>
             <h3 class="my-4 text-3xl leading-tight">
-                Waiting is fun with sapping a coffee
+                Waiting is fun with sipping a coffee
             </h3>
             {{-- <button
             class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
