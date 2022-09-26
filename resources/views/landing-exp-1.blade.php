@@ -28,8 +28,8 @@
             <div class="pl-4 flex items-center">
                 <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
                     href="#">
-                    <img class="object-scale-down h-24 w-72 xs:h-auto xs:w-auto" src={{ asset('assets/image/pmibjn.png')
-                        }} alt="">
+                    <img class="object-scale-down h-24 w-72 xs:h-auto xs:w-auto" src={{ asset('assets/image/pmibjn.png') }}
+                        alt="">
                 </a>
             </div>
             <div class="block lg:hidden pr-4">
@@ -81,9 +81,9 @@
                         nurani.
                     </p>
                     {{-- <button
-                        class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                        Subscribe
-                    </button> --}}
+                    class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                    Subscribe
+                </button> --}}
                 </div>
                 <!--Right Col-->
                 <div class="w-full md:w-3/5 py-6 text-center">
@@ -275,66 +275,68 @@
                 </h4>
             </div>
             @if (count((array) $schedules) > 0)
-            <div class="flex justify-items-stretch md:justify-center">
-                <div class="basis-1/8 flex-none rounded-lg">
-                    <div class="mx-8 sm:mx-4 px-4 sm:px-2 py-4 overflow-x-auto">
-                        <div class="inline-block min-w-full shadow rounded-lg overflow-hidden">
-                            <table class="min-w-full leading-normal">
-                                <thead>
-                                    <tr>
-                                        <th
-                                            class="px-4 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-                                            Nomor</th>
-                                        <th
-                                            class="px-4 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-                                            Lokasi</th>
-                                        <th
-                                            class="px-4 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-                                            Jadwal</th>
-                                        <th
-                                            class="px-4 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-                                            Alamat</th>
+                <div class="flex justify-items-stretch md:justify-center">
+                    <div class="basis-1/8 flex-none rounded-lg">
+                        <div class="mx-8 sm:mx-4 px-4 sm:px-2 py-4 overflow-x-auto">
+                            <div class="inline-block min-w-full shadow rounded-lg overflow-hidden">
+                                <table class="min-w-full leading-normal">
+                                    <thead>
+                                        <tr>
+                                            <th
+                                                class="px-4 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+                                                Nomor</th>
+                                            <th
+                                                class="px-4 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+                                                Lokasi</th>
+                                            <th
+                                                class="px-4 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+                                                Jadwal</th>
+                                            <th
+                                                class="px-4 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+                                                Alamat</th>
 
-                                    </tr>
-                                </thead>
+                                        </tr>
+                                    </thead>
 
-                                <tbody class="bg-white">
-                                    @foreach ($schedules as $schedule)
-                                    <tr>
-                                        <td class="px-4 py-4 whitespace-no-wrap border-b border-gray-200 text-gray-500">
-                                            {{ $loop->index + 1 }}
-                                        </td>
-                                        <td class="px-4 py-4 whitespace-no-wrap border-b border-gray-200 text-gray-500">
-                                            {{ str_replace('"', '', $schedule->Lokasi) }}
-                                        </td>
-                                        <td class="px-4 py-4 whitespace-no-wrap border-b border-gray-200 text-gray-500">
-                                            {{ str_replace('"', '', $schedule->Jadwal) }}
-                                        </td>
-                                        <td class="px-4 py-4 whitespace-no-wrap border-b border-gray-200 text-gray-500">
-                                            {{ str_replace('"', '', $schedule->Alamat) }}
-                                        </td>
-                                    </tr>
-                                    @endforeach
-                                </tbody>
-                            </table>
+                                    <tbody class="bg-white">
+                                        @foreach ($schedules as $schedule)
+                                            <tr>
+                                                <td
+                                                    class="px-4 py-4 whitespace-no-wrap border-b border-gray-200 text-gray-500">
+                                                    {{ $loop->index + 1 }}
+                                                </td>
+                                                <td
+                                                    class="px-4 py-4 whitespace-no-wrap border-b border-gray-200 text-gray-500">
+                                                    {{ str_replace('"', '', $schedule->Lokasi) }}
+                                                </td>
+                                                <td
+                                                    class="px-4 py-4 whitespace-no-wrap border-b border-gray-200 text-gray-500">
+                                                    {{ str_replace('"', '', $schedule->Jadwal) }}
+                                                </td>
+                                                <td
+                                                    class="px-4 py-4 whitespace-no-wrap border-b border-gray-200 text-gray-500">
+                                                    {{ str_replace('"', '', $schedule->Alamat) }}
+                                                </td>
+                                            </tr>
+                                        @endforeach
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
             @else
-            <div class="container flex justify-center mx-auto">
-                <div class=" justify-center rounded-lg text-lg bg-red-500 border-2 border-gray-200 shadow px-4">
-                    <h4 class="w-full my-2 text-4xl font-bol leading-tight text-center text-gray-100 b-1">
-                        Belum Ada Jadwal Hari Ini
-                    </h4>
+                <div class="container flex justify-center mx-auto">
+                    <div class=" justify-center rounded-lg text-lg bg-red-500 border-2 border-gray-200 shadow px-4">
+                        <h4 class="w-full my-2 text-4xl font-bol leading-tight text-center text-gray-100 b-1">
+                            Belum Ada Jadwal Hari Ini
+                        </h4>
+                    </div>
                 </div>
-            </div>
             @endif
             {{-- <div class="flex flex-col mt-8 justify-center">
-                <div class="py-2 -my-2 justify-center sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
-                    <div
-                        class="overflow-hidden align-middle justify-center border-b border-gray-200 shadow sm:rounded-lg">
-                        --}}
+            <div class="py-2 -my-2 justify-center sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
+                <div class="overflow-hidden align-middle justify-center border-b border-gray-200 shadow sm:rounded-lg"> --}}
 
 
         </section>
@@ -375,9 +377,9 @@
                 Waiting is fun with sipping a coffee
             </h3>
             {{-- <button
-                class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                Action!
-            </button> --}}
+            class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+            Action!
+        </button> --}}
         </section>
 
         <!--Footer-->
@@ -446,8 +448,8 @@
                                     Blog</a>
                             </li>
                             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                                <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">About
-                                    Us</a>
+                                <a href="#"
+                                    class="no-underline hover:underline text-gray-800 hover:text-pink-500">About Us</a>
                             </li>
                             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
                                 <a href="#"

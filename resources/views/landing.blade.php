@@ -119,49 +119,49 @@
                 <table class="table-auto">
                     <thead class="bg-red-600 divide-y">
                         <tr>
-                            <th rowspan="2" class="px-4 py-2 text-lg text-white border-solid border-1 border-white">
+                            <th rowspan="2" class="px-4 py-2  text-white border-solid border-1 border-white">
                                 Komponen
                             </th>
-                            <th colspan="4" class="px-4 py-2 text-lg text-white border-solid border-1 border-white">
+                            <th colspan="4" class="px-4 py-2  text-white border-solid border-1 border-white">
                                 Golongan
                             </th>
-                            <th rowspan="2" class="px-4 py-2 text-lg text-white border-solid border-1 border-white">
+                            <th rowspan="2" class="px-4 py-2  text-white border-solid border-1 border-white">
                                 Total
                             </th>
                         </tr>
                         <tr>
-                            <th class="px-4 py-2 text-lg text-white border-solid border-1 border-white">
+                            <th class="px-4 py-2  text-white border-solid border-1 border-white">
                                 A
                             </th>
-                            <th class="px-4 py-2 text-lg text-white border-solid border-1 border-white">
+                            <th class="px-4 py-2  text-white border-solid border-1 border-white">
                                 B
                             </th>
-                            <th class="px-4 py-2 text-lg text-white border-solid border-1 border-white">
+                            <th class="px-4 py-2  text-white border-solid border-1 border-white">
                                 O
                             </th>
-                            <th class="px-4 py-2 text-lg text-white border-solid border-1 border-white">
+                            <th class="px-4 py-2  text-white border-solid border-1 border-white">
                                 AB
                             </th>
                         </tr>
                     </thead>
                     <tbody class="bg-white divide-double divide-y divide-gray-300">
                         <tr class="whitespace-nowrap bg-white">
-                            <td class="px-4 py-4 text-lg bg-white  text-gray-500 tracking-wide">
+                            <td class="px-4 py-4  bg-white  text-gray-500 tracking-wide">
                                 WB (Whole Blood)
                             </td>
-                            <td class="px-4 py-4 text-gray-500 text-lg text-center tracking-wide">
+                            <td class="px-4 py-4 text-gray-500  text-center tracking-wide">
                                 {{ $stocks->wb_a }}
                             </td>
-                            <td class="px-4 py-4 text-gray-500 text-lg text-center">
+                            <td class="px-4 py-4 text-gray-500  text-center">
                                 {{ $stocks->wb_b }}
                             </td>
-                            <td class="px-4 py-4  text-gray-500 text-lg text-center">
+                            <td class="px-4 py-4  text-gray-500  text-center">
                                 {{ $stocks->wb_o }}
                             </td>
-                            <td class="px-4 py-4 text-gray-500 text-lg text-center">
+                            <td class="px-4 py-4 text-gray-500  text-center">
                                 {{ $stocks->wb_ab }}
                             </td>
-                            <td class="px-4 py-4 text-gray-500 text-lg text-center">
+                            <td class="px-4 py-4 text-gray-500  text-center">
                                 {{ $stocks->wb_jum }}
                             </td>
                         </tr>
@@ -169,19 +169,19 @@
                             <td class="px-4 py-4  text-gray-500">
                                 PRC (Packed Red Cell)
                             </td>
-                            <td class="px-4 py-4 text-gray-500 text-lg text-center">
+                            <td class="px-4 py-4 text-gray-500  text-center">
                                 {{ $stocks->prc_a }}
                             </td>
-                            <td class="px-4 py-4 text-gray-500 text-lg text-center">
+                            <td class="px-4 py-4 text-gray-500  text-center">
                                 {{ $stocks->prc_b }}
                             </td>
-                            <td class="px-4 py-4  text-gray-500 text-lg text-center">
+                            <td class="px-4 py-4  text-gray-500  text-center">
                                 {{ $stocks->prc_o }}
                             </td>
-                            <td class="px-4 py-4 text-gray-500 text-lg text-center">
+                            <td class="px-4 py-4 text-gray-500  text-center">
                                 {{ $stocks->prc_ab }}
                             </td>
-                            <td class="px-4 py-4 text-gray-500 text-lg text-center">
+                            <td class="px-4 py-4 text-gray-500  text-center">
                                 {{ $stocks->prc_jum }}
                             </td>
                         </tr>
@@ -189,19 +189,19 @@
                             <td class="px-4 py-4  text-gray-500">
                                 TC (Trombocyte)
                             </td>
-                            <td class="px-4 py-4 text-gray-500 text-lg text-center">
+                            <td class="px-4 py-4 text-gray-500  text-center">
                                 {{ $stocks->tc_a }}
                             </td>
-                            <td class="px-4 py-4 text-gray-500 text-lg text-center">
+                            <td class="px-4 py-4 text-gray-500  text-center">
                                 {{ $stocks->tc_b }}
                             </td>
-                            <td class="px-4 py-4  text-gray-500 text-lg text-center">
+                            <td class="px-4 py-4  text-gray-500  text-center">
                                 {{ $stocks->tc_o }}
                             </td>
-                            <td class="px-4 py-4 text-gray-500 text-lg text-center">
+                            <td class="px-4 py-4 text-gray-500  text-center">
                                 {{ $stocks->tc_ab }}
                             </td>
-                            <td class="px-4 py-4 text-gray-500 text-lg text-center">
+                            <td class="px-4 py-4 text-gray-500  text-center">
                                 {{ $stocks->tc_jum }}
                             </td>
                         </tr>
@@ -209,19 +209,19 @@
                             <td class="px-4 py-4  text-gray-500">
                                 FFP (Fresh Frozen Plasma)
                             </td>
-                            <td class="px-4 py-4 text-gray-500 text-lg text-center">
+                            <td class="px-4 py-4 text-gray-500  text-center">
                                 {{ $stocks->ffp_a }}
                             </td>
-                            <td class="px-4 py-4 text-gray-500 text-lg text-center">
+                            <td class="px-4 py-4 text-gray-500  text-center">
                                 {{ $stocks->ffp_b }}
                             </td>
-                            <td class="px-4 py-4  text-gray-500 text-lg text-center">
+                            <td class="px-4 py-4  text-gray-500  text-center">
                                 {{ $stocks->ffp_o }}
                             </td>
-                            <td class="px-4 py-4 text-gray-500 text-lg text-center">
+                            <td class="px-4 py-4 text-gray-500  text-center">
                                 {{ $stocks->ffp_ab }}
                             </td>
-                            <td class="px-4 py-4 text-gray-500 text-lg text-center">
+                            <td class="px-4 py-4 text-gray-500  text-center">
                                 {{ $stocks->ffp_jum }}
                             </td>
                         </tr>
@@ -229,19 +229,19 @@
                             <td class="px-4 py-4  text-gray-500">
                                 Total
                             </td>
-                            <td class="px-4 py-4 text-gray-500 text-lg text-center">
+                            <td class="px-4 py-4 text-gray-500  text-center">
                                 {{ $stocks->tot_a }}
                             </td>
-                            <td class="px-4 py-4 text-gray-500 text-lg text-center">
+                            <td class="px-4 py-4 text-gray-500  text-center">
                                 {{ $stocks->tot_b }}
                             </td>
-                            <td class="px-4 py-4  text-gray-500 text-lg text-center">
+                            <td class="px-4 py-4  text-gray-500  text-center">
                                 {{ $stocks->tot_o }}
                             </td>
-                            <td class="px-4 py-4 text-gray-500 text-lg text-center">
+                            <td class="px-4 py-4 text-gray-500  text-center">
                                 {{ $stocks->tot_ab }}
                             </td>
-                            <td class="px-4 py-4 text-gray-500 text-lg text-center">
+                            <td class="px-4 py-4 text-gray-500  text-center">
                                 {{ $stocks->tot_jum }}
                             </td>
                         </tr>
@@ -258,49 +258,59 @@
                 Informasi Jadwal Mobile Unit Donor Darah
             </h4>
         </div>
-        <div class="flex justify-items-stretch justify-center">
-            <div class="inline-block shadow rounded-lg overflow-scroll">
-                {{-- Table Here --}}
-                <table class="min-w-full leading-normal">
-                    <thead>
-                        <tr>
-                            <th
-                                class="px-4 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-                                Nomor</th>
-                            <th
-                                class="px-4 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-                                Lokasi</th>
-                            <th
-                                class="px-4 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-                                Jadwal</th>
-                            <th
-                                class="px-4 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-                                Alamat</th>
+        @if (count((array) $schedules) > 0)
+            <div class="flex justify-items-stretch justify-center">
+                <div class="inline-block shadow rounded-lg overflow-scroll">
+                    {{-- Table Here --}}
+                    <table class="min-w-full leading-normal">
+                        <thead>
+                            <tr>
+                                <th
+                                    class="px-4 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+                                    Nomor</th>
+                                <th
+                                    class="px-4 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+                                    Lokasi</th>
+                                <th
+                                    class="px-4 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+                                    Jadwal</th>
+                                <th
+                                    class="px-4 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+                                    Alamat</th>
 
-                        </tr>
-                    </thead>
+                            </tr>
+                        </thead>
 
-                    <tbody class="bg-white">
-                        @foreach ($schedules as $schedule)
-                        <tr>
-                            <td class="px-4 py-4 whitespace-no-wrap border-b border-gray-200 text-gray-500">
-                                {{ $loop->index + 1 }}
-                            </td>
-                            <td class="px-4 py-4 whitespace-no-wrap border-b border-gray-200 text-gray-500">
-                                {{ str_replace('"', '', $schedule->Lokasi) }}
-                            </td>
-                            <td class="px-4 py-4 whitespace-no-wrap border-b border-gray-200 text-gray-500">
-                                {{ str_replace('"', '', $schedule->Jadwal) }}
-                            </td>
-                            <td class="px-4 py-4 whitespace-no-wrap border-b border-gray-200 text-gray-500">
-                                {{ str_replace('"', '', $schedule->Alamat) }}
-                            </td>
-                        </tr>
-                        @endforeach
-                    </tbody>
-                </table>
+                        <tbody class="bg-white">
+                            @foreach ($schedules as $schedule)
+                                <tr>
+                                    <td class="px-4 py-4 whitespace-no-wrap border-b border-gray-200 text-gray-500">
+                                        {{ $loop->index + 1 }}
+                                    </td>
+                                    <td class="px-4 py-4 whitespace-no-wrap border-b border-gray-200 text-gray-500">
+                                        {{ str_replace('"', '', $schedule->Lokasi) }}
+                                    </td>
+                                    <td class="px-4 py-4 whitespace-no-wrap border-b border-gray-200 text-gray-500">
+                                        {{ str_replace('"', '', $schedule->Jadwal) }}
+                                    </td>
+                                    <td class="px-4 py-4 whitespace-no-wrap border-b border-gray-200 text-gray-500">
+                                        {{ str_replace('"', '', $schedule->Alamat) }}
+                                    </td>
+                                </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+                </div>
             </div>
-        </div>
+        @else
+            <div class="container flex justify-center mx-auto">
+                <div class=" justify-center rounded-lg text-lg bg-red-500 border-2 border-gray-200 shadow px-4">
+                    <h4 class="w-full my-2 text-4xl font-bol leading-tight text-center text-gray-100 b-1">
+                        Belum Ada Jadwal Hari Ini
+                    </h4>
+                </div>
+            </div>
+        @endif
     </section>
     <!-- End block -->
     <!-- Start block -->
