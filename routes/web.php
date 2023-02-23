@@ -15,6 +15,7 @@ use App\Http\Controllers\LandingController;
 */
 
 Route::get('/', [LandingController::class, 'index']);
+Route::get('/unitdonordarah', [LandingController::class, 'indexudd']);
 
 Route::get('/test', [LandingController::class, 'test']);
 
