@@ -1,6 +1,6 @@
 <header class="fixed w-full">
     <div
-        class="w-full text-gray-700 bg-gradient-to-r from-red-50 via-red-300 to-red-400 dark-mode:text-gray-200 dark-mode:bg-gray-800">
+        class="w-full text-gray-700 bg-gradient-to-r from-red-50 via-red-300 to-red-400 dark-mode:text-white-200 dark-mode:bg-gray-800">
         <div x-data="{ open: false }"
             class="flex flex-col max-w-screen-xl mx-auto md:items-center md:justify-between md:flex-row">
             <div class="p-4 flex flex-row items-center justify-between">
@@ -26,7 +26,7 @@
                 <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     href="#">Unit Markas</a>
                 <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                    href="/unitdonordarah">Unit Donor Darah</a>
+                    href="#">Unit Donor Darah</a>
                 <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     href="https://gis.pmibojonegoro.com">Bank Data Darah</a>
                 <div @click.away="open = false" class="relative" x-data="{ open: false }">
