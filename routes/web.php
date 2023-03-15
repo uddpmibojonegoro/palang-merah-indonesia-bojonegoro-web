@@ -2,23 +2,15 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LandingController;
+use App\Http\Controllers\Unit\utd\BloodStockController;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
-Route::get('/', [LandingController::class, 'index']);
-Route::get('/unitdonordarah', [LandingController::class, 'indexudd']);
+Route::get('/', [LandingController::class, 'index'])->name('landing');
+Route::name('utd.')->prefix('utd')->group(function () {
+    Route::get('/', [LandingController::class, 'indexutd'])->name('index');
+    Route::get('/bloodstock', [BloodStockController::class, 'bloodStockPage'])->name('stocks');
+});
 
 Route::get('/test', [LandingController::class, 'test']);
-
 
 Route::get('/sample', function () {
     return view('sample');

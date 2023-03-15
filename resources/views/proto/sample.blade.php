@@ -183,10 +183,8 @@
                         <path transform="translate(-11.5 -150.75)"
                             d="m104.42 728.69c12.51 0.1 29.06-2 32.39-4 2.54-1.55 3.55-7.09 3.89-9.65h0.37s-0.7 8.94-4 11-19.89 4.07-32.4 4c-3.61 0-4.85-1.31-4.78-3.21 0.47 1.17 1.84 1.83 4.53 1.86z"
                             opacity=".2" />
-                        <rect x="171.5" y="111.25" width="834" height="456" rx="20.42"
-                            fill="#f2f2f2" />
-                        <path d="m172 133.75h268v434h-247.58a20.42 20.42 0 0 1 -20.42 -20.42v-413.58z"
-                            fill="#ff6347" />
+                        <rect x="171.5" y="111.25" width="834" height="456" rx="20.42" fill="#f2f2f2" />
+                        <path d="m172 133.75h268v434h-247.58a20.42 20.42 0 0 1 -20.42 -20.42v-413.58z" fill="#ff6347" />
                         <path transform="translate(-11.5 -150.75)"
                             d="M1017,282.42V294H183V282.42A20.42,20.42,0,0,1,203.42,262H996.58A20.42,20.42,0,0,1,1017,282.42Z"
                             fill="#3f3d56" />
@@ -219,14 +217,10 @@
                         <path transform="translate(-11.5 -150.75)"
                             d="M568.69,543.05l-19.23-15.41a2.23,2.23,0,0,0-1.39-.48,2.26,2.26,0,0,0-1.4.48l-8.37,6.81v-4.29a.2.2,0,0,0-.2-.21H532a.2.2,0,0,0-.2.21v9.38l-4.34,3.57a1.41,1.41,0,0,0-.54,1,1.45,1.45,0,0,0,.41,1.09,1.41,1.41,0,0,0,1,.42,1.47,1.47,0,0,0,.9-.31l18.7-15.06a.22.22,0,0,1,.14,0,.24.24,0,0,1,.13,0l18.71,15a1.44,1.44,0,0,0,2.33-1.19,1.45,1.45,0,0,0-.55-1Z"
                             fill="#3f3d56" />
-                        <rect x="604" y="260.14" width="347" height="11" rx="1.24"
-                            fill="#ff6347" opacity=".3" />
-                        <rect x="604" y="392.07" width="347" height="11" rx="1.24"
-                            fill="#ff6347" opacity=".3" />
-                        <rect x="878" y="279.75" width="73" height="25" rx="1.24"
-                            fill="#ff6347" />
-                        <rect x="878" y="411.75" width="73" height="25" rx="1.24"
-                            fill="#ff6347" />
+                        <rect x="604" y="260.14" width="347" height="11" rx="1.24" fill="#ff6347" opacity=".3" />
+                        <rect x="604" y="392.07" width="347" height="11" rx="1.24" fill="#ff6347" opacity=".3" />
+                        <rect x="878" y="279.75" width="73" height="25" rx="1.24" fill="#ff6347" />
+                        <rect x="878" y="411.75" width="73" height="25" rx="1.24" fill="#ff6347" />
                         <path transform="translate(-11.5 -150.75)"
                             d="m978.18 606.93l-1.73 2s-21.05 2-20.2 5.39 25.35-4.55 25.35-4.55z" fill="#ffc1c7" />
                         <path transform="translate(-11.5 -150.75)"
@@ -357,12 +351,10 @@
                             fill="#3f3d56" />
                         <path transform="translate(-11.697 -13.011)"
                             d="m1002.9 620.79s-273.2-156.82-390.82-127.11c0 0-249.27 26.825-278.15 85.84 0 0-79.237-247.61-108.12-255.87"
-                            fill="none" opacity=".8" stroke="#ff6347" stroke-miterlimit="10"
-                            stroke-width="2" />
+                            fill="none" opacity=".8" stroke="#ff6347" stroke-miterlimit="10" stroke-width="2" />
                         <path transform="translate(-11.697 -13.011)"
                             d="m333.9 579.53c45.809-122.16 458.5-257.52 458.5-257.52-58.602 14.857-180.35 171.68-180.35 171.68s-257.52-187.36-386.28-170.03c0 0 567.04 18.571 777.1 297.14"
-                            fill="none" opacity=".8" stroke="#ff6347" stroke-miterlimit="10"
-                            stroke-width="2" />
+                            fill="none" opacity=".8" stroke="#ff6347" stroke-miterlimit="10" stroke-width="2" />
                         <circle cx="214.07" cy="310.65" r="11.968" fill="#ff6347" />
                         <circle cx="322.2" cy="566.52" r="11.968" fill="#ff6347" />
                         <circle cx="780.7" cy="309" r="11.968" fill="#ff6347" />
@@ -666,8 +658,8 @@
                                     </td>
                                     <td
                                         class="px-6 py-4 text-sm leading-5 text-gray-500 whitespace-no-wrap border-b border-gray-200">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-red-400"
-                                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-red-400" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                                 d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
                                         </svg>
@@ -709,8 +701,8 @@
                                     </td>
                                     <td
                                         class="px-6 py-4 text-sm leading-5 text-gray-500 whitespace-no-wrap border-b border-gray-200">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-red-400"
-                                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-red-400" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                                 d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
                                         </svg>
@@ -752,8 +744,8 @@
                                     </td>
                                     <td
                                         class="px-6 py-4 text-sm leading-5 text-gray-500 whitespace-no-wrap border-b border-gray-200">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-red-400"
-                                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-red-400" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                                 d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
                                         </svg>
@@ -1010,8 +1002,7 @@
         <div class="container mx-auto px-8">
             <div class="w-full flex flex-col md:flex-row py-6">
                 <div class="flex-1 mb-6 text-black">
-                    <a class="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
-                        href="#">
+                    <a class="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
                         <!--Icon from: http://www.potlabicons.com/ -->
                         <svg class="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512.005 512.005">
@@ -1027,12 +1018,10 @@
                     <p class="uppercase text-gray-500 md:mb-6">Links</p>
                     <ul class="list-reset mb-6">
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                            <a href="#"
-                                class="no-underline hover:underline text-gray-800 hover:text-pink-500">FAQ</a>
+                            <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">FAQ</a>
                         </li>
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                            <a href="#"
-                                class="no-underline hover:underline text-gray-800 hover:text-pink-500">Help</a>
+                            <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Help</a>
                         </li>
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
                             <a href="#"
@@ -1044,8 +1033,7 @@
                     <p class="uppercase text-gray-500 md:mb-6">Legal</p>
                     <ul class="list-reset mb-6">
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                            <a href="#"
-                                class="no-underline hover:underline text-gray-800 hover:text-pink-500">Terms</a>
+                            <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Terms</a>
                         </li>
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
                             <a href="#"
@@ -1074,13 +1062,12 @@
                     <p class="uppercase text-gray-500 md:mb-6">Company</p>
                     <ul class="list-reset mb-6">
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                            <a href="#"
-                                class="no-underline hover:underline text-gray-800 hover:text-pink-500">Official
+                            <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Official
                                 Blog</a>
                         </li>
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                            <a href="#"
-                                class="no-underline hover:underline text-gray-800 hover:text-pink-500">About Us</a>
+                            <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">About
+                                Us</a>
                         </li>
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
                             <a href="#"

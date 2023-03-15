@@ -4,20 +4,24 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Services\LandingService;
+use App\Services\MobileUnitScheduleService;
+use App\Services\StockService;
 use Illuminate\Support\Facades\DB;
 
 class LandingController extends Controller
 {
-    protected $landingService;
+    protected MobileUnitScheduleService $mobileUnitScheduleService;
+    protected StockService $stockService;
 
-    public function __construct(LandingService $landingService)
+    public function __construct(StockService $stockService, MobileUnitScheduleService $mobileUnitScheduleService)
     {
-        $this->landingService = $landingService;
+        $this->stockService = $stockService;
+        $this->mobileUnitScheduleService = $mobileUnitScheduleService;
     }
     public function index()
     {
-        $stock_datas = $this->landingService->getStockData();
-        $schedule_datas = $this->landingService->getScheduleData();
+        $stock_datas = $this->stockService->getReleaseBloodStocks();
+        $schedule_datas = $this->mobileUnitScheduleService->getAll();
         // dd($schedule_datas);
         return view('landing', [
             'stocks' => (object)$stock_datas,
@@ -25,12 +29,12 @@ class LandingController extends Controller
         ]);
     }
 
-    public function indexudd()
+    public function indexutd()
     {
-        $stock_datas = $this->landingService->getStockData();
-        $schedule_datas = $this->landingService->getScheduleData();
+        $stock_datas = $this->stockService->getReleaseBloodStocks();
+        $schedule_datas = $this->mobileUnitScheduleService->getAll();
         // dd($schedule_datas);
-        return view('unitdonordarah', [
+        return view('units.blood-transfusion.index', [
             'stocks' => (object)$stock_datas,
             'schedules' => (object)$schedule_datas
         ]);
